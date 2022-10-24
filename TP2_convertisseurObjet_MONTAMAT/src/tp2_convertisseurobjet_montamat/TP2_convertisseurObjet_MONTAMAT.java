@@ -14,9 +14,7 @@ public class TP2_convertisseurObjet_MONTAMAT {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            @Override
-public String toString () {
- return "nb de conversions"+ nbConversions;
-    }
-    
+ Convertisseur.CVersK (34);
+  
+}
 }
