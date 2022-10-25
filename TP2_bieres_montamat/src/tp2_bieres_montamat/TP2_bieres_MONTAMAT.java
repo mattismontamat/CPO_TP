@@ -16,6 +16,9 @@ public class TP2_bieres_MONTAMAT {
     public static void main(String[] args) {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls", 7.0, "Dubuisson") ;
         uneBiere.lireEtiquette();
+        uneBiere.Décapsuler();
+        System.out.println(uneBiere) ;
+
         
         BouteilleBiere SndBiere = new BouteilleBiere("Leffe", 6.6, "Abbaye de Leffe");
         SndBiere.lireEtiquette();
@@ -23,10 +26,10 @@ public class TP2_bieres_MONTAMAT {
         BouteilleBiere TrdBiere = new BouteilleBiere("Heinken", 5.0, "Heinken international") ;
         TrdBiere.lireEtiquette();
         
-        BouteilleBiere FthBiere = new BouteilleBiere("Desperados", 5.9, "brasserie de l'Esperence") ;
+        BouteilleBiere FthBiere = new BouteilleBiere("Deesperados", 5.9, "brasserie de l'Esperence") ;
         FthBiere.lireEtiquette();
         
-        BouteilleBiere FvBiere = new BouteilleBiere("Desperados", 4.5, "grupo Modelo") ;
+        BouteilleBiere FvBiere = new BouteilleBiere("Corona", 4.5, "grupo Modelo") ;
         FvBiere.lireEtiquette();
 
         
