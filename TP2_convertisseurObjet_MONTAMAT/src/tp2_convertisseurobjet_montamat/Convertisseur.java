@@ -20,34 +20,35 @@ public class Convertisseur {
 }
     public double CVersK (double a ){
         a=a+273 ;
-
+nbConversions+=1;
         return a;
 }
     public double KVersC (double b){
         b=b-273;
-       
+       nbConversions+=1;
         return b;
     }
     public double FVersC (double c){
-        c=(c*1.8)+32;
-       
+        
+        c=(c-32)/1.8;
+       nbConversions+=1;
      return c;
     }
     public double CVersF (double d){
-        d=(d-32)/1.8;
-        
+        d=(d*1.8)+32;
+        nbConversions+=1;
         return d;
         
         
     }
     public double FVersK (double e){
        e = (e + 459.67) * 5/9 ;
-      
+      nbConversions+=1;
        return e;
     }
     public double KVersF (double f){
       f=(f *9/5) - 459.67;
-     
+     nbConversions+=1;
       return f; 
     }
 @Override
