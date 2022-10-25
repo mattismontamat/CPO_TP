@@ -9,7 +9,10 @@ package tp2_manip_montamat;
  * @author matti
  */
 public class Moussaka {
-    int nbCalories; 
+    int nbCalories;
+    public Moussaka(int kal){
+    nbCalories=kal;   
+}
     
     
 }
