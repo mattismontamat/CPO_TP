@@ -13,11 +13,13 @@ public class Voiture {
     String modele;
     String marque;
     int PuissanceCV;
+    Personne Proprietaire;
 
     public Voiture(String mod, String mar, int CV) {
         modele = mod;
         marque = mar;
         PuissanceCV = CV;
+        Proprietaire=null;
 
     }
 

@@ -12,10 +12,15 @@ public class Personne {
 
     String nom;
     String prenom;
+    int nbVoitures ;
+    Voiture [] liste_voitures ;
 
     public Personne(String surname, String name) {
         nom = surname;
         prenom = name;
+        liste_voitures = new Voiture [3] ;
+        nbVoitures=0;
+
     }
 
     @Override
