@@ -34,6 +34,7 @@ bob.liste_voitures[0] ) ;
 }
 else{
     bob.liste_voitures[0]= null;
+    System.out.println("cette voiture a deja un proprietaire");
 }
 
 bob.liste_voitures[1] = une2008 ;
@@ -44,11 +45,12 @@ System.out.println("la deuxieme voiture de Bob est " +
 bob.liste_voitures[1] ) ;
 }
 else{
-   bob.liste_voitures[1]= null; 
+   bob.liste_voitures[1]= null;
+   System.out.println("cette voiture a deja un proprietaire");
 }
 
 System.out.println("\ngarage de reno");
-reno.liste_voitures[0] = uneAutreClio ;
+reno.liste_voitures[0] = une2008 ;
 if (reno.ajouter_voiture(une2008)==true){
 reno.nbVoitures = 1 ;
 une2008.Proprietaire = reno ;
@@ -57,6 +59,7 @@ reno.liste_voitures[0] ) ;
 }
 else{
     reno.liste_voitures[0]=null;
+    System.out.println("cette voiture a deja un proprietaire");
 }
 
 reno.liste_voitures[1] = uneMicra ;
@@ -64,10 +67,11 @@ if (reno.ajouter_voiture(uneMicra)==true){
 reno.nbVoitures = 2 ;
 uneMicra.Proprietaire = reno ;
 System.out.println("la deuxieme voiture de reno est " +
-reno.liste_voitures[0] ) ;
+reno.liste_voitures[1] ) ;
 }
 else{
-    reno.liste_voitures[0]=null;
+    reno.liste_voitures[1]=null;
+    System.out.println("cette voiture a deja un proprietaire");
 }
 
     }
