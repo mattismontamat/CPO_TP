@@ -26,6 +26,7 @@ public class TP2_convertisseurObjet_MONTAMAT {
     
     Scanner sc;
     sc=new Scanner(System.in);
+    Convertisseur c=new Convertisseur();
     
     System.out.println("saisissez la valeur de votre température");
     saisi_n=sc.nextDouble();
@@ -33,7 +34,27 @@ public class TP2_convertisseurObjet_MONTAMAT {
     saisi_c= sc.nextDouble();
             
   if (saisi_c==1) {
-      value= CVersK(saisi_n);
+      value= c.CVersK(saisi_n);
+      System.out.println("="+value+"K");
+  }
+  if (saisi_c==2) {
+      value= c.CVersF(saisi_n);
+      System.out.println("="+value+"F");
+  }
+  if (saisi_c==3) {
+      value= c.KVersC(saisi_n);
+      System.out.println("="+value+"°C");
+  }
+  if (saisi_c==4) {
+      value= c.KVersF(saisi_n);
+      System.out.println("="+value+"F");
+  }
+  if (saisi_c==5) {
+      value= c.FVersC(saisi_n);
+      System.out.println("="+value+"°C");
+  }
+  if (saisi_c==6) {
+      value= c.FVersK(saisi_n);
       System.out.println("="+value+"K");
   }
 }

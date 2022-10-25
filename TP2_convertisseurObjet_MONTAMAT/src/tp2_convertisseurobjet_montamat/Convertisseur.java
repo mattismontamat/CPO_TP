@@ -11,7 +11,7 @@ package tp2_convertisseurobjet_montamat;
 public class Convertisseur {
     
     int nbConversions;
-    int a;
+    
     public Convertisseur (){
     nbConversions= 0;
             }
@@ -20,35 +20,35 @@ public class Convertisseur {
 }
     public double CVersK (double a ){
         a=a+273 ;
- nbConversions+=1;
+
         return a;
 }
-    public double KVersC (double a){
-        a=a-273;
-        nbConversions+=1;
-        return a;
+    public double KVersC (double b){
+        b=b-273;
+       
+        return b;
     }
-    public double FVersC (double a){
-        a=(a*1.8)+32;
-        nbConversions+=1;
-     return a;
+    public double FVersC (double c){
+        c=(c*1.8)+32;
+       
+     return c;
     }
-    public double CVersF (double a){
-        a=(a-32)/1.8;
-        nbConversions+=1;
-        return a;
+    public double CVersF (double d){
+        d=(d-32)/1.8;
+        
+        return d;
         
         
     }
-    public double FVersK (double a){
-       a = (a + 459.67) * 5/9 ;
-       nbConversions+=1;
-       return a;
+    public double FVersK (double e){
+       e = (e + 459.67) * 5/9 ;
+      
+       return e;
     }
-    public double KVersF (double a){
-      a=(a *9/5) - 459.67;
-      nbConversions+=1;
-      return a; 
+    public double KVersF (double f){
+      f=(f *9/5) - 459.67;
+     
+      return f; 
     }
 @Override
 public String toString () {
