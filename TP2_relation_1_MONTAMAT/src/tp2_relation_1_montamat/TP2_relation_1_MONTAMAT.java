@@ -52,7 +52,7 @@ else{
 System.out.println("\ngarage de reno");
 reno.liste_voitures[0] = une2008 ;
 if (reno.ajouter_voiture(une2008)==true){
-reno.nbVoitures = 1 ;
+reno.nbVoitures += 1 ;
 une2008.Proprietaire = reno ;
 System.out.println("la premiere voiture de reno est " +
 reno.liste_voitures[0] ) ;
@@ -64,7 +64,7 @@ else{
 
 reno.liste_voitures[1] = uneMicra ;
 if (reno.ajouter_voiture(uneMicra)==true){
-reno.nbVoitures = 2 ;
+reno.nbVoitures += 1 ;
 uneMicra.Proprietaire = reno ;
 System.out.println("la deuxieme voiture de reno est " +
 reno.liste_voitures[1] ) ;
