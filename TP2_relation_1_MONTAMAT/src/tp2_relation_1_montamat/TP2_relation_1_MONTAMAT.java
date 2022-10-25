@@ -25,29 +25,50 @@ System.out.println("liste des voitures disponibles "+ uneClio +
 
 System.out.println("\ngarage de bob");
 bob.liste_voitures[0] = uneClio ;
-bob.nbVoitures = 1 ;
+
+if (bob.ajouter_voiture(uneClio)==true){
+bob.nbVoitures+= 1 ;
 uneClio.Proprietaire = bob ;
 System.out.println("la premiere voiture de Bob est " +
 bob.liste_voitures[0] ) ;
+}
+else{
+    bob.liste_voitures[0]= null;
+}
 
 bob.liste_voitures[1] = une2008 ;
-bob.nbVoitures = 2 ;
+if (bob.ajouter_voiture(une2008)==true){
+bob.nbVoitures+= 1 ;
 une2008.Proprietaire = bob ;
 System.out.println("la deuxieme voiture de Bob est " +
 bob.liste_voitures[1] ) ;
+}
+else{
+   bob.liste_voitures[1]= null; 
+}
 
 System.out.println("\ngarage de reno");
 reno.liste_voitures[0] = uneAutreClio ;
+if (reno.ajouter_voiture(une2008)==true){
 reno.nbVoitures = 1 ;
-uneAutreClio.Proprietaire = reno ;
+une2008.Proprietaire = reno ;
 System.out.println("la premiere voiture de reno est " +
 reno.liste_voitures[0] ) ;
+}
+else{
+    reno.liste_voitures[0]=null;
+}
 
 reno.liste_voitures[1] = uneMicra ;
+if (reno.ajouter_voiture(uneMicra)==true){
 reno.nbVoitures = 2 ;
 uneMicra.Proprietaire = reno ;
 System.out.println("la deuxieme voiture de reno est " +
-reno.liste_voitures[1] ) ;
+reno.liste_voitures[0] ) ;
+}
+else{
+    reno.liste_voitures[0]=null;
+}
 
     }
     

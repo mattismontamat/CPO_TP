@@ -22,6 +22,15 @@ public class Personne {
         nbVoitures=0;
 
     }
+    
+   public boolean ajouter_voiture (Voiture voiture_a_ajouter){
+    if (voiture_a_ajouter.Proprietaire==null) {
+        return true; 
+    }  
+    else{
+        return false;
+    }
+   } 
 
     @Override
     public String toString() {
