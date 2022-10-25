@@ -9,5 +9,19 @@ package tp2_relation_1_montamat;
  * @author matti
  */
 public class Personne {
-    
+
+    String nom;
+    String prenom;
+
+    public Personne(String surname, String name) {
+        nom = surname;
+        prenom = name;
+    }
+
+    @Override
+    public String toString() {
+
+        return null;
+
+    }
 }

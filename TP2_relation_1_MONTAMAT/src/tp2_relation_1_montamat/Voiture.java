@@ -9,5 +9,26 @@ package tp2_relation_1_montamat;
  * @author matti
  */
 public class Voiture {
-    
+
+    String modele;
+    String marque;
+    int PuissanceCV;
+
+    public Voiture(String mod, String mar, int CV) {
+        modele = mod;
+        marque = mar;
+        PuissanceCV = CV;
+
+    }
+
+    @Override
+    public String toString() {
+
+        String a;
+a =  "\nmodele:"+  modele +"\nmarque:" +  marque + "\nnbCV:" +  PuissanceCV ;
+
+return a ;
+
+    }
+
 }
