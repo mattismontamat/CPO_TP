@@ -17,10 +17,9 @@ public class TP2_convertisseurObjet_MONTAMAT {
      */
     public static void main(String[] args) {
 
-        double saisi_n;
+        double saisi_n; //initialisation de la variable saisi de la valeur température 
 
-        double saisi_c;
-
+        double saisi_c;//initialisation de la variable saisi de la comparaison souhaitée
         double value;
         
         
@@ -33,8 +32,11 @@ public class TP2_convertisseurObjet_MONTAMAT {
         saisi_c = 0;
         do {
 
-            System.out.println("Quelle conversion souhaitez vous faire ? \n1: Celcius vers Kelvin\n2: Celcius vers Farenheit\n3: Kelvin vers Celcius\n4: Kelvin vers Farenheit\n5: Farenheit vers Celcius\n6: Farenheit vers Kelvin\n7 non je souhaite quitter");
-            saisi_c = sc.nextDouble();
+            System.out.println("Quelle conversion souhaitez vous faire ? \n1: Celcius vers Kelvin\n2: Celcius vers Farenheit\n3: Kelvin vers Celcius\n4: Kelvin vers Farenheit\n5: Farenheit vers Celcius\n6: Farenheit vers Kelvin\n7 aucune je souhaite quitter");
+           saisi_c = sc.nextDouble();
+            if(saisi_c==7){
+                break;
+            }
             System.out.println("saisissez la valeur de votre température");
             saisi_n = sc.nextDouble();
 
@@ -71,7 +73,7 @@ public class TP2_convertisseurObjet_MONTAMAT {
 
         } while (saisi_c != 7);
         
-        System.out.println("nombre de conversions" +c);
+        System.out.println( c );
 
     }
 }
