@@ -8,23 +8,14 @@ package tp4_heritage_montamat;
  *
  * @author matti
  */
-public class Arme {
-    String name;
-    int PA; 
+public class epée extends Arme {
+    int finesse;
     
-    public Arme(String nom,int att){
-        name=nom;
-        PA=att; 
+    public epée (String nom, int att, int fin){
+        super (nom,att);
+        finesse=fin;
     }
     
-    @Override
-    public String toString() {
-
-        String a;
-a =  "\narme: "+  name +"\n points d'attaque: " +  PA ;
-
-return a ;
-
-    }
+   
     
 }
