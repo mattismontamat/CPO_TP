@@ -15,6 +15,7 @@ public class Arme {
     public Arme(String nom,int att){
         name=nom;
         PA=att; 
+        
     }
     
     

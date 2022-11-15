@@ -4,6 +4,9 @@
  */
 package Personnages;
 
+import ARMES.Arme;
+import java.util.ArrayList;
+
 /**
  *
  * @author matti
@@ -11,6 +14,7 @@ package Personnages;
 public class Personnages {
     String name;
     int PV;
+    ArrayList<Arme> inventaire = new ArrayList (5);
 
     public String getName() {
         return name;

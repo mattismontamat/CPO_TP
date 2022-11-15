@@ -16,7 +16,7 @@ public class Magicien extends Personnages {
     
     public Magicien (String nom, int pv, boolean conf){
         super(nom,pv);
-        confirmé=conf;
+        this.confirmé=conf;
     }
 
     public boolean isConfirmé() {

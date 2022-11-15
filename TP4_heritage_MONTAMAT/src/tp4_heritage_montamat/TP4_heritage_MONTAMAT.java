@@ -39,12 +39,9 @@ int a;
 
 a= tab.size();
 for(int i=0;i<a;i++) {
-   
-    
     System.out.println(tab.get(i));
-    
-    
 }
+
 Magicien n1 = new Magicien("Gandalf",65,true);
 Magicien n2 = new Magicien ("Garcimore", 44, false);
 Guerrier N1 = new Guerrier ("Conan",78,false);
@@ -59,16 +56,12 @@ pers.add(N2);
 int b;
 
 b= pers.size();
-for(int i=0;i<b;i++) {
-   
-    
-    System.out.println(pers.get(i));
-        
-        
-
-
-
+for(int i=0;i<b;i++) { 
+    System.out.println(pers.get(i));    
     }
+
+
+
     }
 }
     
