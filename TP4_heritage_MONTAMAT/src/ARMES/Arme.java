@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp4_heritage_montamat;
+package ARMES;
 
 /**
  *
@@ -17,11 +17,12 @@ public class Arme {
         PA=att; 
     }
     
+    
     @Override
     public String toString() {
 
         String a;
-a =  "\narme: "+  name +"\n points d'attaque: " +  PA ;
+a =  "\narme: "+  name +"\npoints d'attaque: " +  PA ;
 
 return a ;
 
