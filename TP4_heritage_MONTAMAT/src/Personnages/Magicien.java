@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp4_heritage_montamat;
+package Personnages;
+
+import Personnages.Personnages;
 
 /**
  *
@@ -16,4 +18,15 @@ public class Magicien extends Personnages {
         super(nom,pv);
         confirmé=conf;
     }
+
+    public boolean isConfirmé() {
+        return confirmé;
+    }
+
+    public void setConfirmé(boolean confirmé) {
+        this.confirmé = confirmé;
+    }
+    
+
+    
 }
